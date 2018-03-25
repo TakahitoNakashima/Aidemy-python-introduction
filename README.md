@@ -1,3 +1,2 @@
-# Aidemy-python-introduction
 
-# AidemyのPython基礎
+# Aidemy Python基礎
