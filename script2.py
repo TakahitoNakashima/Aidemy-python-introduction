@@ -80,4 +80,96 @@ town = {"Aichi": "Nagoya", "Kanagawa": "Yokohama", "Hokkaido": "Sapporo"}
 for prefecture, capital in town.items():
     print(prefecture + " " + capital)
 
+vege = "potato"
+numbers = [4, 5, 2, 7, 6]
+
+# 変数vegeのオブジェクトの長さを出力してください
+print(len(vege))
+
+# 変数numbersのオブジェクトの長さを出力してください
+print(len(numbers))
+
+animal = "elephant"
+
+# 変数animal_bigに変数animalに格納された文字列を大文字にしたものを代入してください
+animal_big = animal.upper()
+
+print(animal)
+print(animal_big)
+
+# 変数animalに「e」が何個存在するか出力してください
+print(animal.count("e"))
+
+fruit = "banana"
+color = "yellow"
+
+# 「bananaはyellowです」と出力してください
+print("{}は{}です".format(fruit, color))
+
+n = [3, 6, 8, 6, 3, 2, 4, 6]
+
+# 「2」のインデックス番号を出力してください
+print(n.index(2))
+
+# 変数n内の「6」の数を出力してください
+print(n.count(6))
+
+
+n = [53, 26, 37, 69, 24, 2]
+
+# nをソートし、数字が小さい順になるように出力してください
+n.sort()
+print(n)
+
+# 数字が小さい順になるようにソートされたnの要素の順番を反対にし、数字が大きい順になるように出力してください
+n.reverse()
+print(n)
+
+
+# 「Yamadaです」と出力する関数introduceを作ってください
+def introduce():
+    print("Yamadaです")
+
+
+# 関数の呼び出し
+introduce()
+
+# 引数nを用いて、引数を３乗した値を出力する関数cube_calを作ってください 
+def cube_cal(n):
+    print(n ** 3)
+
+
+# 関数の呼び出し
+cube_cal(4)
+
+# 関数introduceを作ってください
+def introduce(name, age):
+    print(name + "です。" + age + "歳です。")
+
+# 関数の呼び出し
+introduce("Yamada", "18")
+
+# 初期値を設定してください
+def introduce(age, name = "Yamada"):
+    print(name + "です。" + str(age) + "歳です。")
+
+# 関数の呼び出し
+introduce(18)
+
+
+# bmiを計算する関数を作り、bmiの値を返り値としてください
+def bmi(height, weight):
+    result = weight / height ** 2
+    return result
+
+print(bmi(1.65, 65))
+
+# fromを利用してtimeをインポートしてください
+from time  import time 
+
+# now_timeに現在の時刻を代入してください
+now_time = time()
+
+print(now_time)
+
 
