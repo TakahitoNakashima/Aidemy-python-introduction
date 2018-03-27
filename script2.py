@@ -173,3 +173,56 @@ now_time = time()
 print(now_time)
 
 
+# MyProductクラスを定義
+class MyProduct:
+    # コンストラクタを修正してください
+    def __init__(self, name, price, stock):
+        # 引数をメンバに格納してください
+        self.name = name
+        self.price = price
+        self.stock = stock
+        
+        self.sales = 0
+        
+# MyProductを呼び出し、オブジェクトproduct_1を作成
+product_1 = MyProduct("cake", 500, 20)
+
+# product_1のstockを出力してください
+print(product_1.stock)
+
+
+# MyProductクラスを定義
+class MyProduct:
+    def __init__(self, name, price, stock):
+        self.name = name
+        self.price = price
+        self.stock = stock
+        self.sales = 0
+    # 概要メソッド
+    def summary(self):
+        message = "called summary().\n name: " + self.get_name() + \
+        "\n price: " + str(self.price) + \
+        "\n stock: " + str(self.stock) + \
+        "\n sales: " + str(self.sales)
+        print(message)
+    # nameを返すget_name()を作成して下さい
+    def get_name(self):
+        return self.name
+    # 引数のぶんだけpriceを減らすdiscount()を作成して下さい
+    def discount(self, n):
+        self.price -= n
+
+product_2 = MyProduct("phone", 30000, 100)
+# 5000だけdiscountして下さい
+product_2.discount(5000)
+
+# product_2のsummaryを出力して下さい
+product_2.summary()
+
+def bmi(height, weight):
+    return weight / height**2
+
+# 「bmiは＊＊です」と出力させてください
+print("bmiは%.4fです" % bmi(170, 65))
+
+
